@@ -86,12 +86,7 @@ class HillClimbingReset(LocalSearch):
     """Algoritmo de Ascensión de Colinas con Reinicio Aleatorio."""
 
     def __init__(self) -> None:
-        """Inicializa el algoritmo con los parámetros necesarios.
-        
-        Args:
-            max_iters (int): Número máximo de iteraciones antes de considerar que se ha alcanzado un máximo local.
-            max_resets (int): Número máximo de reinicios aleatorios permitidos.
-        """
+        """Inicializa el algoritmo con los parámetros necesarios"""
         super().__init__()
         self.max_iters = 100  # Máximo de iteraciones antes de reiniciar
         self.max_resets = 10  # Número máximo de reinicios permitidos
