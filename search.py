@@ -94,6 +94,7 @@ class HillClimbingReset(LocalSearch):
         best_value = float('-inf')
         best_solution = []
 
+        #Mientras el contador de reseteos no alcance el maximo permitido
         while reset_count <= self.max_resets:
             if reset_count == 0:
                 actual = problem.init
